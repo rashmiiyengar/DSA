@@ -14,7 +14,6 @@ public class P2 {
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter Number");
             int x = sc.nextInt();
-           
             
             if(x==0)
                 break;
@@ -27,8 +26,6 @@ public class P2 {
                 sumn+=x;
                 countn++;
             }
-                
-            
            
         }
         System.out.println("sum of positive numbers:" +sump);
