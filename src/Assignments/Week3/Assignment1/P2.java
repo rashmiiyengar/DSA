@@ -2,7 +2,6 @@ package Assignments.Week3.Assignment1;
 
 import java.util.Scanner;
 
-
 //Enter the sum of all odd and even elements in an array
 public class P2 {
     public static void main(String[] args) {

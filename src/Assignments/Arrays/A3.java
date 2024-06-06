@@ -26,7 +26,7 @@ public class A3 {
 
         int average =sum/size;
 
-        System.out.println("");
+        System.out.println(""+average);
 
 
 
