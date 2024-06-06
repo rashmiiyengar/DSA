@@ -1,10 +1,7 @@
 package Advanced;
 
-
-
 public class P1 {
     String s = "hello";
-
 
     public static void m (){
 

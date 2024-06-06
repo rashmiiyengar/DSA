@@ -1,4 +1,4 @@
-package Assignments.Week3;
+package Assignments.Week3.Assignment1;
 
 import java.util.Scanner;
 
@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class P1 {
 
     public static void main(String[] args) {
-        
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of an array");
@@ -18,9 +17,7 @@ public class P1 {
         int i;
 
         for(i=0;i<size;i++){
-
             arr[i]= sc.nextInt();
-
         }
 
         for(i=size-1;i>=0;i--){
