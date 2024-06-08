@@ -26,16 +26,17 @@ public class A9 {
 
         System.out.println(" enter the elemnt");
         for(int i=0;i<size;i++){
-                System.out.println("enter the element");
+                
               a[i] =  sc.nextInt();
         }
         sc.close();
         int i,j;
 
+        System.out.println("output array");
         for(i=0,j=size-1;i<size;i++,j--){
             b[i]= a[i]+b[j];
             
-          System.out.println( " output array" +b[i]);
+          System.out.println(  +b[i]);
         }
 
 

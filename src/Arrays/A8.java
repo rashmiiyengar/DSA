@@ -2,8 +2,6 @@ package Arrays;
 
 import java.util.Scanner;
 
-
-
 //Find minimum value in an array
 public class A8 {
     

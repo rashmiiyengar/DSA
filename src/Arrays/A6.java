@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //display numbers in array that are consecutive
 
-//ip: [21,22,3,8,6,7]
+//ip: [21,22,3,8,6,7], [3,8,9,10,20,22,21,22]
 //op: [21,22]
 public class A6 {
     
@@ -16,13 +16,12 @@ public class A6 {
 
         int a[] = new int[size];
 
-        System.out.println(" eneter the elemnt");
+        System.out.println(" enter the elemnt");
         for(int i=0;i<size;i++){
                 System.out.println("enter the element");
               a[i] =  sc.nextInt();
         }
         for(int i=0;i<size-1;i++){
-
 
             if(a[i] ==a[i+1]-1){
 
