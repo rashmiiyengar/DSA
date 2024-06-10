@@ -13,6 +13,11 @@ public class P1 {
             System.out.println(e.getMessage());
         }
     }
+    
+    static void d(){
+        System.out.println("parent class");
+    }
+
     public static void main(String[] args) {
         
         m();
