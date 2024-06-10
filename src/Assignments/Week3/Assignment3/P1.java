@@ -1,8 +1,8 @@
-package Assignments.Week3.Assignment2;
+package Assignments.Week3.Assignment3;
 
 import java.util.Scanner;
 
-public class P4 {
+public class P1 {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class P4 {
 
         int i, index = -1;
 
-        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE, sec_min = Integer.MAX_VALUE;
 
         System.out.println("Enter the elements of array");
         for (i = 0; i < size; i++) {
@@ -25,14 +25,18 @@ public class P4 {
 
         sc.close();
 
+        // [1,2,3,4,5,6]
         for (i = 0; i < size; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
+            if (arr[i] < min) {
+                sec_min = min;
+                min = arr[i];
+            } else if (arr[i] < sec_min && arr[i] != min) {
+                sec_min = arr[i];
                 index = i;
             }
 
         }
 
-        System.out.println("index of maximum value" +index);
+        System.out.println(sec_min);
     }
 }
