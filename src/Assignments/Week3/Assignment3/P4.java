@@ -2,6 +2,7 @@ package Assignments.Week3.Assignment3;
 
 import java.util.Scanner;
 
+//program to check if all ements are equal
 public class P4 {
 
     public static void main(String[] args) {
