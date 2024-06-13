@@ -5,7 +5,6 @@ import java.util.Scanner;
 //palindrome using recursion
 public class P3 {
    
-
     public static boolean isPalindrome(String str){
 
         if(str.length()<=1)
@@ -15,8 +14,8 @@ public class P3 {
 
         boolean res=isPalindrome(str.substring(1, str.length()-1));
         return res;
-        
     }
+    
     public static void main(String[] args) {
         
         System.out.println("Enter the string");
