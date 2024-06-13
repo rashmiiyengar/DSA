@@ -6,12 +6,18 @@ public class P1 {
 
     public void display(int x){
 
-        if(x>5)
-            return;
-        else   
-            System.out.println(x);
-            display(x+1);
-    }
+        // if(x>5)
+        //     return;
+        // else   
+        //     System.out.println(x);
+        //     display(x+1);
+
+            if(x<=5)
+            {
+                System.out.println(x);
+                display(x+1);
+            }    
+        }
 
     public static void main(String[] args) {
         
