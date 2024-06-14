@@ -22,7 +22,6 @@ public class P8 {
         return xPown;
 
     }
-
     public static void main(String[] args) {
         
         int x=2,n=5;
