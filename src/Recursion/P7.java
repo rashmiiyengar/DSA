@@ -8,8 +8,7 @@ package Recursion;
 public class P7 {
 
     public static void printFib(int a, int b, int n){
-        //a - second last tern
-        //b - last tetrm 
+      
         if(n==0){
             return;
         }
