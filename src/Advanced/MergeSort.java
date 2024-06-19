@@ -22,7 +22,7 @@ public class MergeSort {
                 merged[x++]= arr[indx2++];
             }
         }
-
+        //
         while(indx1<=mid){
             merged[x]=arr[indx1];
                 x++;
@@ -37,7 +37,6 @@ public class MergeSort {
         for(int i=0,j=si;i<merged.length;i++,j++){
             arr[j]=merged[i];
         }
-
     }
 
     //O(logn)
