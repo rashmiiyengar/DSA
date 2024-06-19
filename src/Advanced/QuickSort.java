@@ -2,12 +2,15 @@ package Advanced;
 
 public class QuickSort { 
 
+    //Time complexity
+    //Worst case - Worst case occurs when pivot is always the smallest or the largest element
+    //O(n^n)
 
+    //Average case - O(nlogn) 
     public static void quickSort(int arr[],int low,int high){
         if(low<high){
 
             int pivotx= partition(arr,low,high);
-
             quickSort(arr, low, pivotx-1);
             quickSort(arr, pivotx+1, high);
         }
@@ -27,16 +30,12 @@ public class QuickSort {
                 int temp= arr[i];
                 arr[i]=arr[j];
                 arr[j]=temp;
-
-
             }
         }
         i++;
         int temp= arr[i];
         arr[i]=pivot;
         arr[high]=temp;
-
-
         return i;//pivot index
     }
 
