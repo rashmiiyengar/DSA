@@ -20,9 +20,6 @@ public class P4 {
                 char ch=(char)(i<=26?(i+97):(i-26+65));
                 System.out.println(ch+" Occurs "+freq[i]+ " times");
             }
-           
         }
     }
-   
-
 }

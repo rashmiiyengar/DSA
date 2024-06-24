@@ -2,7 +2,6 @@ package Hash;
 
 public class P1 {
     public static void main(String[] args) {
-        
 
         int a[]= {1,2,1,9,10,4,9};
 
