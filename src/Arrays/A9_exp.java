@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class A9 {
+public class A9_exp {
     
     //write 
 
