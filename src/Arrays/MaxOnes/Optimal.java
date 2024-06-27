@@ -1,5 +1,9 @@
 package Arrays.MaxOnes;
 
+
+//Given a binary array nums, return the maximum number of consecutive 1's in the array.
+//Leetcode 485
+
 public class Optimal {
     static int findMaxConsecutiveOnes(int nums[]) {
         int cnt = 0;
