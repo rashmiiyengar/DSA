@@ -1,27 +1,36 @@
 package Basic;
 
 public class Prime {
-    public static void main(String[] args) {
-        
-        int n = 9,flag=0,i;
 
-        if(n==1)
-        { 
-            System.out.println("neither prime nor composite");
-            return;
+    static boolean isPrime(int number) {
+
+        if (number < 2) {
+            System.out.println("Number is neither prime nor composite");
+            return false;
+        }
+
+        if (number == 2) {
+            return true;
+        }
+
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            // If number is divisible by any number in this range, it's not prime
+            if (number % i == 0) {
+                return false;
             }
 
-        for ( i=2;i<n;i++){
-
-             if(n%i ==0){
-                 
-                 break;
-         }  
         }
-       // if(flag == 1)
-       if(n==i) 
-        System.out.println("pRIME NUMBER");
-        else
-        System.out.println("not prime number");
+        // If no divisors are found return true
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        int arr[] = { 2, 3, 4, 5, 6, 7, 8 };
+
+        for (int e : arr) {
+            System.out.println("The number " + e + "is prime " + isPrime(e));
+        }
+
     }
 }

@@ -14,7 +14,7 @@ public class Print1 {
            
             for(j=i;j<=2*i-1;j++){
                 System.out.print(j);
-                k++;
+                //k++;
 
             }
             System.out.println();

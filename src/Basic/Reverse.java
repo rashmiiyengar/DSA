@@ -11,7 +11,7 @@ public class Reverse {
             //2. add last digit in temp variable
             //3. remove last digit from original number
 
-            long x= 1234567892, rev=0;
+            long x= 123, rev=0;
             while(x!=0){
 
                 long temp= x % 10 ;
@@ -22,6 +22,5 @@ public class Reverse {
 
             }
             System.out.println(rev);
-
     }
 }

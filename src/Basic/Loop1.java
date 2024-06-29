@@ -11,6 +11,6 @@ public class Loop1 {
             i++;
         }
         while(i<=20);
-        System.out.println(i);
+        //System.out.println(i);
     }
 }
