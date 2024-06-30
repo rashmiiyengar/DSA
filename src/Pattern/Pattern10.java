@@ -1,6 +1,4 @@
 package Pattern;
-
-
 //1
 //13
 //135
