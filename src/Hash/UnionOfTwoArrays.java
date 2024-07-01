@@ -1,11 +1,10 @@
 package Hash;
 
 import java.util.HashSet;
-
 // Union {7,3,9,6,2,4}
-// Nested noop - Time complexity will be o(n^2)
+// Nested loop - Time complexity will be o(n^2)
 // Sort o(nlogn)
-// optimal using hashmap
+// Optimal using hashmap
 
 public class UnionOfTwoArrays {
     
@@ -28,6 +27,6 @@ public class UnionOfTwoArrays {
 
         int setSize =union(arr1, arr2);
         System.out.println("Number of elements in union set is : " +setSize);
-        
+
     }
 }
