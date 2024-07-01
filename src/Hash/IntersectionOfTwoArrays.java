@@ -26,7 +26,7 @@ public class IntersectionOfTwoArrays {
 public static void main(String[] args) {
     
     int arr1[] = {7,3,9};
-    int arr2[] ={6,3,9,2,9,4};
+    int arr2[] = {6,3,9,2,9,4};
 
     int count =intersection(arr1, arr2);
 
