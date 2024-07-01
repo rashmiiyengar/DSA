@@ -184,6 +184,5 @@ public class HashMapCode {
         for(int i=0;i<keys.size();i++){
             System.out.println(keys.get(i)+ " " +map.get(keys.get(i)));
         }
-
     }
 }
