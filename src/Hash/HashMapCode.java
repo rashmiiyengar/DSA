@@ -147,6 +147,7 @@ public class HashMapCode {
             } else {
                 // key exist
                 Node node = buckets[bi].remove(di);
+                n--;
                 return node.value;
             }
         }
@@ -177,6 +178,12 @@ public class HashMapCode {
         map.put("India", 190);
         map.put("US", 120);
         map.put("Italy", 90);
+
+        ArrayList<String> keys = map.keySet();
+
+        for(int i=0;i<keys.size();i++){
+            System.out.println(keys.get(i)+ " " +map.get(keys.get(i)));
+        }
 
     }
 }
