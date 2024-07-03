@@ -11,7 +11,16 @@ public class Pattern6 {
         
         int i,j;
 
-        for(i=1;i<=4;i++){
+        // for(i=1;i<=4;i++){
+
+        //     for(j=i;j>=1;j--){
+        //         System.out.print(j+ " ");
+        //     }
+
+        //     System.out.println();
+        // }
+
+        for(i=4;i>=1;i--){
 
             for(j=i;j>=1;j--){
                 System.out.print(j+ " ");
@@ -19,7 +28,6 @@ public class Pattern6 {
 
             System.out.println();
         }
-
 
     }
 }
