@@ -12,7 +12,7 @@ public class PalindromePhrase {
                 return false;
             }
 
-        }
+        } 
 
         return true;
     }

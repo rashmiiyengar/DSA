@@ -25,7 +25,7 @@ public class Palindrome {
     }
 
     public static void main(String[] args) {
-        int x= 121;
+       int x= 121;
        Boolean ans = isPalindrome(x);
        System.out.println(ans);
     }
