@@ -1,0 +1,94 @@
+**Considering this array -**
+int [] prices = {7,1,5,3,6,4};
+
+1. We will take a variable maxProfit =0 which will be later updates
+2. We will also make a min value to Integer.MAX_VALUE
+By initializing min to Integer.MAX_VALUE, you ensure that any price in the prices array will be less than min initially. 
+This allows the first comparison if (prices[i] < min) to always set min to the first element in the array during the first iteration.
+
+**Iterations**
+ i=0 ; i<prices.length;i++
+ 
+ 
+**First Iteration**
+i = 0 
+maxProfit =0
+min = 2147483647 - Integer.MAX_VALUE
+7<2147483647 true
+min = prices[i]
+
+ min value updated -> min = 7 
+
+else loop will not run here as the if loop has been executed
+
+--------------------------------
+
+i=1
+maxProfit = 0
+min = 7
+
+prices[i] < min true
+1 < 7   true
+min = prices[i]
+
+ min value updated -> min = 1
+ 
+ ---------------------------------
+ 
+** i = 2**
+ maxProfit = 0
+ min = 1
+ 
+ prices[i] < min
+ 5< 1 False
+ 
+ Control  goes to else position 
+ prices[i]-min > maxProfit
+ 5 - 1 > 0 true 
+ 
+ maxProfit = prices[i] - min;
+ maxProfit = 5-1
+ maxProfit = 4
+ 
+ ---------------------------------
+ 
+** i = 3**
+ maxProfit = 4
+ min = 1
+ 
+  prices[i] < min
+	3< 1 False control goes to else
+	
+	prices[i]-min > maxProfit
+	3-1 > 4
+	2 > 4 False , i will be incremented
+	
+	--------------------------------
+	
+	**i =4**
+	maxProfit= 4
+	min=1
+	
+	  prices[i] < min
+		6< min False control goes to else
+		
+		prices[i]-min > maxProfit
+		6-1 > 4
+		5>4 true 
+		maxProfit = prices[i] - min;
+		maxProfit = 5
+		
+		-----------------------------------
+		
+**		i = 5 **
+		maxProfit = 5
+		min = 1
+		
+		 prices[i] < min
+		 4< 1 False control to else
+		 
+		 prices[i]-min > maxProfit
+		 4-1 > maxProfit 
+		 3> 5 False 
+		 
+		 ----- at the end 5 will remain our maximum profit , we but at min -1. and sell at 6 
