@@ -26,6 +26,10 @@ public class P1 {
 
     // Method to print the linked list
     public static void printList() {
+        if(head==null){
+            System.out.println("list is empty");
+            return;
+        }
         Node current = head;
         while (current != null) {
             System.out.print(current.data + " -> ");
@@ -46,6 +50,27 @@ public class P1 {
         newNode.next = head;
         head= newNode;
     
+    }
+
+    //add -last
+    public void addLast(String data){
+
+        Node newNode = new Node(data);
+       
+        if(head== null){
+             head=  newNode;
+             return;
+        }
+
+        Node currNode = head;
+        while (currNode.next!= null) {
+            
+            currNode = currNode.next;
+
+        }
+
+        currNode.next= newNode;
+
     }
 
     public static void main(String[] args) {
