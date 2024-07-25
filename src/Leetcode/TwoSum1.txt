@@ -1,0 +1,64 @@
+
+**Intuition**
+​
+the two sum problem asks us to find two numbers in an array that sum up to target value, we need to return the indeces of these two numbers.
+​
+**Approach**
+​
+1 By following brute force approach is to consider every pair od elements and & check if their sum equals to target value, this can be donw using nested loops,
+where outer loop iterates from the first element to second-to-last element and the second loop inner loop iterates from next element to last element.
+This approach gives us a complexity od O(n^2)
+​
+2 A more efficient approach is to use hash table , we need to iterate through the array once and store in Hashmap, for each element check if the target minus the current element exists in hash table . If it does we have found a valid pair of numbers. if not we add the current element to has table
+​
+*Approach using hashtable*
+​
+1. Create and empty hasmap to store ement and their index
+2. Iterate through the array from left to right
+3. For each element nums[i] , calculate the complement by subracting it from the target, complement = target- nums[i]
+4. check if the complement exists in hashmap , if it does we got the solution
+5. If the complement does not exist add the current element nums[i] to hash table with its index as value
+6. reapeat steps 3-5 until we find the solution or reach the end of array
+7. If no solution is found we return an empty array or an appropriate indicator
+​
+**CODE**
+**Solution 1- Brute force**
+```
+> class Solution {
+>     public int[] twoSum(int[] nums, int target) {
+>         int n = nums.length;
+>         for (int i = 0; i < n - 1; i++) {
+>             for (int j = i + 1; j < n; j++) {
+>                 if (nums[i] + nums[j] == target) {
+>                     return new int[]{i, j};
+>                 }
+>             }
+>         }
+>         return new int[]{
+>         }; // No solution found
+>     }
+> }
+```
+​
+**Solution 2 - Two-pass hash table**
+```
+> class Solution 
+>     public int[] twoSum(int[] nums, int target) {
+>         Map<Integer, Integer> numMap = new HashMap<>();
+>         int n = nums.length;
+> 
+>         // Build the hash table
+>         for (int i = 0; i < n; i++) {
+>             numMap.put(nums[i], i);
+>         }
+> 
+>         // Find the complement
+>         for (int i = 0; i < n; i++) {
+>             int complement = target - nums[i];
+>             if (numMap.containsKey(complement) && numMap.get(complement) != i) {
+>                 return new int[]{i, numMap.get(complement)};
+>             }
+>         }
+> 
+
+Tag
