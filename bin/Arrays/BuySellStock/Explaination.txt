@@ -1,7 +1,7 @@
 **Considering this array -**
 int [] prices = {7,1,5,3,6,4};
 
-1. We will take a variable maxProfit =0 which will be later updates
+1. We will take a variable maxProfit =0 which will be later updated
 2. We will also make a min value to Integer.MAX_VALUE
 By initializing min to Integer.MAX_VALUE, you ensure that any price in the prices array will be less than min initially. 
 This allows the first comparison if (prices[i] < min) to always set min to the first element in the array during the first iteration.
