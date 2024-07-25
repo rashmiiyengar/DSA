@@ -21,7 +21,8 @@ public class P1 {
             this.next= null;
         }
     }
-    // head of the list
+
+    // Head of the list
     private static Node head;
 
     // Method to print the linked list
@@ -38,8 +39,7 @@ public class P1 {
         System.out.println("null");
     }
    
-
-    //add - first,last
+    //Add - first
     public void addFirst(String data){
         Node newNode = new Node(data);
        
@@ -49,10 +49,9 @@ public class P1 {
         }
         newNode.next = head;
         head= newNode;
-    
     }
 
-    //add -last
+    //Add -last
     public void addLast(String data){
 
         Node newNode = new Node(data);
@@ -64,22 +63,50 @@ public class P1 {
 
         Node currNode = head;
         while (currNode.next!= null) {
-            
             currNode = currNode.next;
-
         }
 
         currNode.next= newNode;
+    }
 
+    //Delete first
+    public void deleteFirst(){
+
+        if(head==null){
+            System.out.println("list is empty");
+            return;
+        }
+        head=head.next;
+    }
+
+     //Delete last
+     public void deleteLast(){
+
+        if(head==null){
+            System.out.println("list is empty");
+            return;
+        }
+
+        
+        Node secLast = head;
+        Node lastNode = head.next;
+        while (lastNode.next!=null) {
+            
+            
+        }
     }
 
     public static void main(String[] args) {
 
         P1 list = new P1();
             list.addFirst("a");
-            list.addFirst("b");
+            list.addFirst("is");
 
             printList();
+        list.addLast("last");
+        list.addFirst("this");
+            printList();
+
     }
     
 }
