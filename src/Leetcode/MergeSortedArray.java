@@ -5,7 +5,7 @@ public class MergeSortedArray {
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         
         if(n == 0)return;
-        
+
         int len1 = nums1.length;
         int end_idx = len1-1;
         while(n > 0 && m > 0){
@@ -22,7 +22,7 @@ public class MergeSortedArray {
             nums1[end_idx] = nums2[n-1];
             n--;
             end_idx--;
-        }
+        } 
 
     }
 
