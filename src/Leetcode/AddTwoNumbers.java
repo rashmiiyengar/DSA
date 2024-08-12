@@ -38,6 +38,7 @@ public class AddTwoNumbers {
 
         public static void main(String[] args) {
             AddTwoNumbers solution = new AddTwoNumbers();
+
             // Create first number: 342 (represented as 2 -> 4 -> 3)
             ListNode l1 = new ListNode(2);
             l1.next = new ListNode(4);
@@ -55,6 +56,7 @@ public class AddTwoNumbers {
             while (result != null) {
                 System.out.print(result.val);
                 if (result.next != null) {
+                    
                     System.out.print(" -> ");
                 }
                 result = result.next;
