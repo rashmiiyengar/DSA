@@ -1,6 +1,7 @@
 package Leetcode;
 
-public class Solution {
+//using recursion
+public class PalindromeLinkedList {
 
     public static class ListNode {
         int val;
@@ -36,7 +37,7 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        int[] values = { 1, 2, 2, 1 };
+        int[] values = { 1, 1, 2, 1 };
 
         ListNode head = new ListNode(values[0]);
         ListNode curr = head;
